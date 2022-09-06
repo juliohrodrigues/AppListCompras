@@ -22,9 +22,9 @@ namespace AppCompras.View
         {
             Item P = new Item();
             P.Produto = txt_Produto.Text;
-            P.Quantidade = Convert.ToDouble(txt_Qntd.Text);
-            P.PrecoUnitario = Convert.ToDouble(txt_PrecoUnit.Text);
-            P.Descricao = txt_Desc.Text;
+            P.Qtd = Convert.ToDouble(txt_Qntd.Text);
+            P.PrecoUnt = Convert.ToDouble(txt_PrecoUnit.Text);
+            P.Desc = txt_Desc.Text;
 
             await App.Database.Insert(P);
 
