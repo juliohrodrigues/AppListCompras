@@ -11,9 +11,9 @@ using AppCompras.Model;
 namespace AppCompras.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cadastro : ContentPage
+    public partial class Cadastrar : ContentPage
     {
-        public Cadastro()
+        public Cadastrar()
         {
             InitializeComponent();
         }

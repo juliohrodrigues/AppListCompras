@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppCompras.Helper;
+using AppCompras.View;
 
 using System.IO;
 

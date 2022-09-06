@@ -20,12 +20,12 @@ namespace AppCompras.Helper
 
         public Task<List<Item>> GetAllRows()
         {
-            return _db.Table<Item>().OrderByDescending(i => i.Id).ToListAsync();
+            return _db.Table<Item>().OrderByDescending(o => o.Id).ToListAsync();
         }
 
         public Task<Item> GetById(int id)
         {
-            return _db.Table<Item>().FirstAsync(i => i.Id == id);
+            return _db.Table<Item>().FirstAsync(o => o.Id == id);
         }
 
         public Task<int> Insert(Item NovoItem)
@@ -40,16 +40,16 @@ namespace AppCompras.Helper
 
             return _db.QueryAsync<Item>(sql,
                 NovoItem.Produto,
-                NovoItem.Quantidade,
-                NovoItem.PrecoUnitario,
-                NovoItem.Descricao,
+                NovoItem.Qtd,
+                NovoItem.PrecoUnt,
+                NovoItem.Desc,
                 NovoItem.Total,
                 NovoItem.Id);
         }
 
         public Task<int> Delete(int id)
         {
-            return _db.Table<Item>().DeleteAsync(i => i.Id == id);
+            return _db.Table<Item>().DeleteAsync(o => o.Id == id);
         }
 
         public Task<List<Item>> Search(string search)
