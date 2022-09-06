@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCompras.View.Cadastrar"
+             Title="Minhas Compras">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Minhas Compras" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Cadastro:" TextColor="Black" FontSize="27" Margin="5, 10, 10, 0" />
+
+            <Entry x:Name="txt_Produto" Placeholder="Produto" Margin="5, 0, 5, 0" />
+            <Entry x:Name="txt_PrecoUnt" Placeholder="Preço Unitário" Margin="5, 0, 5, 0" Keyboard="Numeric"
+                   />
+            <Entry x:Name="txt_Qntd" Placeholder="Quantidade" Margin="5, 0, 5, 0" Keyboard="Numeric" />
+            <Entry x:Name="txt_Desc" Placeholder="Descrição" Margin="5, 0, 5, 0" />
+
+            <Button Text="Adicionar" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
